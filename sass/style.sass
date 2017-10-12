@@ -1,0 +1,93 @@
+$color_pink: #FA97AC
+$color_Dpink: #F05E6C
+$color_blue: #3B5FAC
+$color_black: #1F1F21
+$color_white: #FEFAEC
+
+*
+  font-family: 'Titillium Web', sans-serif , 微軟正黑體
+  // border: 1px solid black
+  position: relative
+  font-weight: 700
+
+body,html
+  margin: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $color_pink
+  
+#myBuyList
+  padding: 20px
+  border: 4px solid $color_black
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.5)
+  background-color: $color_white
+  min-width: 300px
+  
+  h1
+    margin: -20px -20px 10px -20px
+    padding: 10px 20px
+    font-size: 1.7em
+    background-color: $color_blue
+    color: $color_white
+    border-bottom: 4px solid $color_black
+    font-weight: 600
+    
+.addBuyItem,.buyItem
+  padding: 10px
+  margin: 10px 0px
+  border: 3px solid $color_black
+  
+.addBuyItem
+  .filed
+    display: inline-block
+    input
+      padding: 5px
+      border: 3px solid $color_black
+      width: 100px
+  .addBtn
+    padding: 5px 10px
+    font-size: 0.8em
+    cursor: pointer
+    border: 3px solid $color_black
+    margin: 10px
+    display: inline-block
+    &:hover
+      background-color: $color_Dpink
+      color: $color_white
+#itemList
+  .buyItem
+    list-style-type: none
+    .name
+      display: inline-block
+      border-left: 6px solid $color_blue
+      padding-left: 10px
+      white-space: pre-wrap
+      max-width: 200px
+    .price
+      display: inline-block
+      position: absolute
+      padding: 0px 10px
+      right: 20%
+      background-color: $color_pink
+      &::before
+        content: '$ '
+    .dltBtn
+      display: inline-block
+      position: absolute
+      right: 10%
+      cursor: pointer
+      padding: 0px 5px
+      &:hover
+        background-color: $color_Dpink
+        color: $color_white
+  .Total
+    background-color: $color_blue
+    color: $color_white
+    font-weight: 600
+    font-size: 1.2em
+    .price
+      background-color: transparent
+      font-weight: 600

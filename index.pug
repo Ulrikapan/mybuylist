@@ -1,0 +1,43 @@
+doctype html
+html(lang='zh-TW')
+  head
+    title My BuyList
+    meta(charset="UTF-8")
+        //- 相容性模式
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        //-  相容性模式-end
+    meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no")
+    meta(name='author', content='PIN CHUN PAN')
+    meta(name='copyright', content='Pin Chun Pan ,All Rights Reserved')
+
+    //- CDN
+    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900')
+    //- Custom
+    link(rel='stylesheet prefetch' href='css/style.css')
+
+body
+  #myBuyList
+    h1 To-Buy List
+    .addBuyItem
+      .filed
+        label Product
+        input#itemName(placeholder='購物項目名稱')
+      .filed
+        label Price
+        input#itemPrice(placeholder='300')
+      .addBtn +Add
+    #itemList 
+      //- li.buyItem
+      //-   .itemName 手機保護貼
+      //-   .price 400
+      //-   .dltBtn X
+      //- li.buyItem 
+      //-   .itemName 髮飾
+      //-   .price 300
+      //-   .dltBtn X
+      //- li.buyItem.Total Total
+      //-   .price 700
+
+
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+  script(src='js/index.js')
