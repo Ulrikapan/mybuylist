@@ -7,18 +7,6 @@
 body, html {
   margin: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: #FA97AC;
   overflow-x: hidden;
   overflow-y: scroll; }
@@ -29,7 +17,14 @@ body, html {
   -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
   background-color: #FEFAEC;
-  min-width: 300px; }
+  width: 60%;
+  min-width: 470px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%; }
   #myBuyList h1 {
     margin: -20px -20px 10px -20px;
     padding: 10px 20px;
